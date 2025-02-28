@@ -889,7 +889,7 @@ void D_DoomMain (void)
 	extern int sidemove[2];
 	
 	if (p<myargc-1)
-	    scale = atoi (myargv[p+1]);
+	    scale = atoi(myargv[p+1]);
 	if (scale < 10)
 	    scale = 10;
 	if (scale > 400)
@@ -925,7 +925,7 @@ void D_DoomMain (void)
 	    
 	  case commercial:
 	  default:
-	    p = atoi (myargv[p+1]);
+	    int p = atoi (myargv[p+1]);
 	    if (p<10)
 	      sprintf (file,"~"DEVMAPS"cdata/map0%i.wad", p);
 	    else
